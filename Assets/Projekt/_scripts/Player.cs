@@ -7,9 +7,7 @@ public class Player : MonoBehaviour
 {
     public event Action ScoreChanged;
     [SerializeField] private float speed = 15f;
-    [SerializeField] private float pullForce = 10f;
     [SerializeField] private PickupSensor pickupSensor;
-    [SerializeField] private PickupSensor pullSensor;
 
     public float jumpForce = 2.0f;
     private Vector3 jump;
@@ -44,6 +42,19 @@ public class Player : MonoBehaviour
         isGrounded = true;
     }
 
+    private void OnEnable()
+    {
+        KillSensor.KillAnyPlayer += HandleDeath;
+    }
+
+    private void OnDisable()
+    {
+        KillSensor.KillAnyPlayer -= HandleDeath;
+    }
+    private void HandleDeath()
+    {
+        Debug.Log("Player is dead");
+    }
     private void PickupSensor_PickupEntered(Pickup pickup)
     {
         Score++;
