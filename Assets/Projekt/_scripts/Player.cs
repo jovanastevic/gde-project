@@ -36,8 +36,6 @@ public class Player : MonoBehaviour
         jump = new Vector3(0f, 2.0f, 0f);
         pickupSensor.PickupEntered += PickupSensor_PickupEntered;
         pickupSensor.PickupExit += PickupSensor_PickupExit;
-        pullSensor.PickupEntered += PullSensor_PickupEntered;
-        pullSensor.PickupExit += PullSensor_PickupExit;
     }
 
     //Check if on Floor
@@ -59,16 +57,7 @@ public class Player : MonoBehaviour
     {
         pullPickups.Remove(pickup);
     }
-
-    private void PullSensor_PickupEntered(Pickup pickup)
-    {
-        pullPickups.Add(pickup);
-    }
-
-    private void PullSensor_PickupExit(Pickup pickup)
-    {
-        pullPickups.Remove(pickup);
-    }
+    
 
     //Movement Jump W A S D
     private void FixedUpdate()
@@ -85,15 +74,7 @@ public class Player : MonoBehaviour
             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
             isGrounded = false;
         }
-        foreach (Pickup pickup in pullPickups)
-        {
-            Vector3 direction = transform.position - pickup.transform.position;
-            direction.Normalize();
-            pickup.Rigidbody.AddForce(direction * pullForce);
-        }
     }
-
-    //Set Alle OnTrigger too Destroy
 
 
     // Update is called once per frame
@@ -106,7 +87,7 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene("Tutorial"); //mit namen angeben, nicht mit ID
+            SceneManager.LoadScene("GamePlay"); //mit namen angeben, nicht mit ID
         }
         
     }

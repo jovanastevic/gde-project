@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 302241599}
   - component: {fileID: 302241602}
   m_Layer: 0
-  m_Name: PullSensort
+  m_Name: PullSensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 302241597}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edf81ecae88f41cfad11c5981e3bdccd, type: 3}
+  m_Script: {fileID: 11500000, guid: e44477a14a4a44cab2737b60df366f77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickupSensor
 --- !u!1 &780463963
@@ -259,6 +259,7 @@ GameObject:
   - component: {fileID: 780463965}
   - component: {fileID: 780463964}
   - component: {fileID: 780463968}
+  - component: {fileID: 780463969}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -365,13 +366,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780463963}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.253733, y: -0, z: -0, w: 0.9672743}
-  m_LocalPosition: {x: 0, y: 8.38, z: -19.3}
+  m_LocalRotation: {x: 0.2164396, y: 0, z: 0, w: 0.97629607}
+  m_LocalPosition: {x: 0, y: 8.5, z: -19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 29.397, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 25, y: 0, z: 0}
 --- !u!114 &780463968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,6 +417,20 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &780463969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780463963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2676726d987a07d488a52f867a3a9224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraFollowPlayer
+  player: {fileID: 1380037813}
+  Player: {fileID: 1380037811}
 --- !u!1 &927831266
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,7 +501,7 @@ GameObject:
   - component: {fileID: 997918353}
   - component: {fileID: 997918352}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -709,7 +724,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1077372538}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edf81ecae88f41cfad11c5981e3bdccd, type: 3}
+  m_Script: {fileID: 11500000, guid: e44477a14a4a44cab2737b60df366f77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickupSensor
 --- !u!1 &1278353607
@@ -839,6 +854,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1332815368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1332815370}
+  - component: {fileID: 1332815369}
+  m_Layer: 0
+  m_Name: PickUpManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1332815369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332815368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f06cd6a261834bc088b0a6d114fea530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PickupManager
+  pickupPrefab: {fileID: 8516244749964734814, guid: f5061ba69795e014e9b37dbdb0572aa6, type: 3}
+  Player: {fileID: 1690358408}
+  creationDelayS: 2
+--- !u!4 &1332815370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332815368}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1380037811
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,9 +910,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1380037813}
-  - component: {fileID: 1380037812}
-  - component: {fileID: 1380037814}
   - component: {fileID: 1380037815}
+  - component: {fileID: 1380037814}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -858,31 +919,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!143 &1380037812
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1380037811}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!4 &1380037813
 Transform:
   m_ObjectHideFlags: 0
@@ -913,13 +949,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cf6cb93868c4e378ef7c2081302d692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  speed: 15
+  speed: 25
   pullForce: 10
   pickupSensor: {fileID: 1077372543}
   pullSensor: {fileID: 302241602}
-  jumpForce: 2
-  jump: {x: 0, y: 0, z: 0}
-  isGrounded: 0
+  jumpForce: 3
 --- !u!54 &1380037815
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -928,7 +962,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380037811}
   serializedVersion: 5
-  m_Mass: 1
+  m_Mass: 2.5
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -960,7 +994,7 @@ GameObject:
   - component: {fileID: 1690358411}
   - component: {fileID: 1690358410}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: playerBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1070,3 +1104,4 @@ SceneRoots:
   - {fileID: 927831268}
   - {fileID: 997918355}
   - {fileID: 1380037813}
+  - {fileID: 1332815370}

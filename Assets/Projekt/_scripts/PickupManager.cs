@@ -12,7 +12,7 @@ public class PickupManager : MonoBehaviour
 
     private Vector3 player;
 
-   void Awake()
+    void Awake()
     {
         pickupPool = new ObjektPool<Pickup>(transform, pickupPrefab);
     }
@@ -21,7 +21,7 @@ public class PickupManager : MonoBehaviour
     {
         StartCoroutine(CreatePickupRoutine());
     }
-    
+
     private IEnumerator CreatePickupRoutine()
     {
         while (true)
@@ -33,7 +33,10 @@ public class PickupManager : MonoBehaviour
 
     private Pickup CreatePickup()
     {
-        Vector3 playerPos = Player.transform.position;
+        float[] possiblePos =
+            { -5f, 0, 5f };
+        Vector3 playerPos = new Vector3(possiblePos[Random.Range(0, 3)], 1,
+            Player.transform.position.z);
         Vector3 spawnOffset = Player.transform.forward * 10f;
         Vector3 targetPosition = playerPos + spawnOffset;
         Pickup pickup = pickupPool.GetPoolObjekt();
