@@ -9,11 +9,10 @@ public class Player : MonoBehaviour
     [SerializeField] private float pullForce = 10f;
     [SerializeField] private PickupSensor pickupSensor;
     [SerializeField] private PickupSensor pullSensor;
-
-    private CharacterController characterController;
+    
     public float jumpForce = 2.0f;
-    public Vector3 jump;
-    public bool isGrounded;
+    private Vector3 jump;
+    private bool isGrounded;
     private Rigidbody rb;
 
     //private List<Pickup> pullPickups = new List<Pickup>();
@@ -32,7 +31,6 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        characterController = GetComponent<CharacterController>();
         rb = GetComponent<Rigidbody>();
         jump = new Vector3(0f, 2.0f, 0f);
         // pickupSensor.PickupEntered += PickupSensor_PickupEntered;
@@ -40,45 +38,28 @@ public class Player : MonoBehaviour
         // pullSensor.PickupEntered += PullSensor_PickupEntered;
         // pullSensor.PickupExit += PullSensor_PickupExit;
     }
-    
-    void OnCollisionStay(){
+
+    void OnCollisionStay()
+    {
         isGrounded = true;
     }
+
     // Update is called once per frame
     void Update()
     {
-        Vector3 movementVector = Vector3.zero;
-        if (Input.GetKey(KeyCode.A))
-        {
-            movementVector += new Vector3(-1, 0, 0);
-        }
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetKey(KeyCode.D))
-        {
-            movementVector += new Vector3(1, 0, 0);
-        }
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            movementVector += new Vector3(0, 0, 1);
-        }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            movementVector += new Vector3(0, 0, -1);
-        }
-
+        Vector3 tempVect = new Vector3(h, 0, v);
+        tempVect = tempVect.normalized * speed * Time.deltaTime;
+        rb.MovePosition(transform.position + tempVect);
+        
         if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
-            Console.WriteLine(rb);
             isGrounded = false;
         }
-
-        movementVector.Normalize();
-
-        characterController.Move(movementVector.normalized * speed * Time.deltaTime);
-
+        
         /*foreach (Pickup pickup in pullPickups)
         {
             Vector3 direction = transform.position - pickup.transform.position;
@@ -86,7 +67,8 @@ public class Player : MonoBehaviour
             pickup.Rigidbody.AddForce(direction * pullForce);
         }*/
     }
-    private void PickupSensor_PickupEntered()//Pickup pickup war als Parameter
+
+    private void PickupSensor_PickupEntered() //Pickup pickup war als Parameter
     {
         Score++;
         // pullPickups.Remove(pickup);
@@ -95,17 +77,17 @@ public class Player : MonoBehaviour
         //pickup.PickedUp();
     }
 
-    private void PickupSensor_PickupExit()//Pickup pickup war als Parameter
+    private void PickupSensor_PickupExit() //Pickup pickup war als Parameter
     {
         //pullPickups.Remove(pickup);
     }
 
-    private void PullSensor_PickupEntered()//Pickup pickup war als Parameter
+    private void PullSensor_PickupEntered() //Pickup pickup war als Parameter
     {
         //pullPickups.Add(pickup);
     }
 
-    private void PullSensor_PickupExit()//Pickup pickup war als Parameter
+    private void PullSensor_PickupExit() //Pickup pickup war als Parameter
     {
         // pullPickups.Remove(pickup);
     }
