@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     public float jumpForce = 2.0f;
     public Vector3 jump;
     public bool isGrounded;
-    Rigidbody rb;
+    private Rigidbody rb;
 
     //private List<Pickup> pullPickups = new List<Pickup>();
 
@@ -71,6 +71,7 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+            Console.WriteLine(rb);
             isGrounded = false;
         }
 
