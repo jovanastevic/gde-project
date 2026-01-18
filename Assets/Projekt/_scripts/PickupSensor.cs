@@ -3,21 +3,22 @@ using UnityEngine;
 
 public class PickupSensor : MonoBehaviour
 {
-    public event Action<Collider> PickupEntered;
-    public event Action<Collider> PickupExited;
-
+    public event Action<Pickup> PickupEntered;
+    public event Action<Pickup> PickupExit;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("PickUp"))
+        Pickup pickup = other.GetComponent<Pickup>();
+        if (null != pickup)
         {
-            PickupEntered?.Invoke(other);
+            PickupEntered?.Invoke(pickup);
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("PickUp"))
+        Pickup pickup = other.GetComponent<Pickup>();
+        if (null != pickup)
         {
-            PickupExited?.Invoke(other);
+            PickupExit?.Invoke(pickup);
         }
     }
 }

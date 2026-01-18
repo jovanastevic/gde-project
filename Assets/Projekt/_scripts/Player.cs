@@ -10,13 +10,13 @@ public class Player : MonoBehaviour
     [SerializeField] private float pullForce = 10f;
     [SerializeField] private PickupSensor pickupSensor;
     [SerializeField] private PickupSensor pullSensor;
-    
+
     public float jumpForce = 2.0f;
     private Vector3 jump;
     private bool isGrounded;
     private Rigidbody rb;
 
-    //private List<Pickup> pullPickups = new List<Pickup>();
+    private List<Pickup> pullPickups = new List<Pickup>();
 
     private int score = 0;
 
@@ -34,10 +34,12 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         jump = new Vector3(0f, 2.0f, 0f);
-        pickupSensor.PickupEntered += HandlePickup;
-        pullSensor.PickupEntered += HandlePull;
+        pickupSensor.PickupEntered += PickupSensor_PickupEntered;
+        pickupSensor.PickupExit += PickupSensor_PickupExit;
+        pullSensor.PickupEntered += PullSensor_PickupEntered;
+        pullSensor.PickupExit += PullSensor_PickupExit;
     }
-    
+
     //Check if on Floor
     void OnCollisionStay()
     {
@@ -51,7 +53,6 @@ public class Player : MonoBehaviour
 
     private void HandlePull(Collider coll)
     {
-        
     }
 
     //Movement Jump W A S D
@@ -63,16 +64,16 @@ public class Player : MonoBehaviour
         Vector3 tempVect = new Vector3(h, 0, v);
         tempVect = tempVect.normalized * speed * Time.deltaTime;
         rb.MovePosition(transform.position + tempVect);
-        
+
         if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
             isGrounded = false;
         }
     }
-    
+
     //Set Alle OnTrigger too Destroy
-    
+
 
     // Update is called once per frame
     void Update()
@@ -86,36 +87,36 @@ public class Player : MonoBehaviour
         {
             SceneManager.LoadScene("Tutorial"); //mit namen angeben, nicht mit ID
         }
-        
-        /*foreach (Pickup pickup in pullPickups)
+
+        foreach (Pickup pickup in pullPickups)
         {
             Vector3 direction = transform.position - pickup.transform.position;
             direction.Normalize();
             pickup.Rigidbody.AddForce(direction * pullForce);
-        }*/
+        }
     }
 
-    private void PickupSensor_PickupEntered() //Pickup pickup war als Parameter
+    private void PickupSensor_PickupEntered(Pickup pickup)
     {
         Score++;
-        // pullPickups.Remove(pickup);
+        pullPickups.Remove(pickup);
         // Destroy(pickup.gameObject);
         // pickup.gameObject.SetActive(false);
-        //pickup.PickedUp();
+        pickup.PickedUp();
     }
 
-    private void PickupSensor_PickupExit() //Pickup pickup war als Parameter
+    private void PickupSensor_PickupExit(Pickup pickup)
     {
-        //pullPickups.Remove(pickup);
+        pullPickups.Remove(pickup);
     }
 
-    private void PullSensor_PickupEntered() //Pickup pickup war als Parameter
+    private void PullSensor_PickupEntered(Pickup pickup)
     {
-        //pullPickups.Add(pickup);
+        pullPickups.Add(pickup);
     }
 
-    private void PullSensor_PickupExit() //Pickup pickup war als Parameter
+    private void PullSensor_PickupExit(Pickup pickup)
     {
-        // pullPickups.Remove(pickup);
+        pullPickups.Remove(pickup);
     }
 }
