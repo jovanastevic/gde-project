@@ -4,8 +4,8 @@
 
 ### 1. 3D Modelle:
 
-- Sadi [ ]
-- Jovana [ ]
+- Sadi [X]
+- Jovana [X]
 - Max [ ]
 
 ### 2. Technical Stuff
