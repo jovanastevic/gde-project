@@ -6,9 +6,11 @@ using Random = UnityEngine.Random;
 public class PickupManager : MonoBehaviour
 {
     [SerializeField] private Pickup pickupPrefab;
-    [SerializeField] private float creationRadius;
+    [SerializeField] private GameObject Player;
     [SerializeField] private float creationDelayS;
     private ObjektPool<Pickup> pickupPool;
+
+    private Vector3 player;
 
    void Awake()
     {
@@ -31,10 +33,11 @@ public class PickupManager : MonoBehaviour
 
     private Pickup CreatePickup()
     {
-        Vector2 position2D = Random.insideUnitCircle * creationRadius;
-        Vector3 position = new Vector3(position2D.x, 1, position2D.y);
+        Vector3 playerPos = Player.transform.position;
+        Vector3 spawnOffset = Player.transform.forward * 10f;
+        Vector3 targetPosition = playerPos + spawnOffset;
         Pickup pickup = pickupPool.GetPoolObjekt();
-        pickup.transform.position = position;
+        pickup.transform.position = targetPosition;
         return pickup;
     }
 }

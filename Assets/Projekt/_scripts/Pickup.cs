@@ -15,9 +15,5 @@ public class Pickup : MonoBehaviour
     }
     
     public Rigidbody Rigidbody{ get { return rb; } }
-
-    private void FixedUpdate()
-    {
-        throw new NotImplementedException();
-    }
+    
 }

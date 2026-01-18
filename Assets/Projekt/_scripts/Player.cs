@@ -46,56 +46,6 @@ public class Player : MonoBehaviour
         isGrounded = true;
     }
 
-    private void HandlePickup(Collider coll)
-    {
-        Destroy(coll.gameObject);
-    }
-
-    private void HandlePull(Collider coll)
-    {
-    }
-
-    //Movement Jump W A S D
-    private void FixedUpdate()
-    {
-        float h = Input.GetAxisRaw("Horizontal");
-        float v = Input.GetAxisRaw("Vertical");
-
-        Vector3 tempVect = new Vector3(h, 0, v);
-        tempVect = tempVect.normalized * speed * Time.deltaTime;
-        rb.MovePosition(transform.position + tempVect);
-
-        if (Input.GetKey(KeyCode.Space) && isGrounded)
-        {
-            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
-            isGrounded = false;
-        }
-    }
-
-    //Set Alle OnTrigger too Destroy
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
-
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene("Tutorial"); //mit namen angeben, nicht mit ID
-        }
-
-        foreach (Pickup pickup in pullPickups)
-        {
-            Vector3 direction = transform.position - pickup.transform.position;
-            direction.Normalize();
-            pickup.Rigidbody.AddForce(direction * pullForce);
-        }
-    }
-
     private void PickupSensor_PickupEntered(Pickup pickup)
     {
         Score++;
@@ -119,4 +69,47 @@ public class Player : MonoBehaviour
     {
         pullPickups.Remove(pickup);
     }
+
+    //Movement Jump W A S D
+    private void FixedUpdate()
+    {
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
+
+        Vector3 tempVect = new Vector3(h, 0, v);
+        tempVect = tempVect.normalized * speed * Time.deltaTime;
+        rb.MovePosition(transform.position + tempVect);
+
+        if (Input.GetKey(KeyCode.Space) && isGrounded)
+        {
+            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
+            isGrounded = false;
+        }
+        foreach (Pickup pickup in pullPickups)
+        {
+            Vector3 direction = transform.position - pickup.transform.position;
+            direction.Normalize();
+            pickup.Rigidbody.AddForce(direction * pullForce);
+        }
+    }
+
+    //Set Alle OnTrigger too Destroy
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("Tutorial"); //mit namen angeben, nicht mit ID
+        }
+        
+    }
+
+    
 }
