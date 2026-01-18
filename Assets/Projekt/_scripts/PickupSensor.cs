@@ -2,23 +2,22 @@ using System;
 using UnityEngine;
 
 public class PickupSensor : MonoBehaviour
-{ /*
-    public event Action<Pickup> PickupEntered;
-    public event Action<Pickup> PickupExit;
+{
+    public event Action<Collider> PickupEntered;
+    public event Action<Collider> PickupExited;
+
     private void OnTriggerEnter(Collider other)
     {
-        Pickup pickup = other.GetComponent<Pickup>();
-        if (null != pickup)
+        if (other.CompareTag("PickUp"))
         {
-            PickupEntered?.Invoke(pickup);
+            PickupEntered?.Invoke(other);
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        Pickup pickup = other.GetComponent<Pickup>();
-        if (null != pickup)
+        if (other.CompareTag("PickUp"))
         {
-            PickupExit?.Invoke(pickup);
+            PickupExited?.Invoke(other);
         }
-    }*/
+    }
 }

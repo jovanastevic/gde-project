@@ -4,7 +4,17 @@ public class CameraFollowPlayer : MonoBehaviour
 {
     public Transform player;
     
-    void Update () {
-        transform.position = player.transform.position + new Vector3(0, 10, -15);
+    [SerializeField]
+    private GameObject Player;
+    private Vector3 Offset;
+	
+    void Start(){
+        Offset = transform.position;
+    }
+	
+    void LateUpdate()
+    {
+        //camera	Position vom Player + Offset
+        transform.position = Player.transform.position + Offset;
     }
 }

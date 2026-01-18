@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -33,19 +34,28 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         jump = new Vector3(0f, 2.0f, 0f);
-        // pickupSensor.PickupEntered += PickupSensor_PickupEntered;
-        //pickupSensor.PickupExit += PickupSensor_PickupExit;
-        // pullSensor.PickupEntered += PullSensor_PickupEntered;
-        // pullSensor.PickupExit += PullSensor_PickupExit;
+        pickupSensor.PickupEntered += HandlePickup;
+        pullSensor.PickupEntered += HandlePull;
     }
-
+    
+    //Check if on Floor
     void OnCollisionStay()
     {
         isGrounded = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void HandlePickup(Collider coll)
+    {
+        Destroy(coll.gameObject);
+    }
+
+    private void HandlePull(Collider coll)
+    {
+        
+    }
+
+    //Movement Jump W A S D
+    private void FixedUpdate()
     {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
@@ -58,6 +68,23 @@ public class Player : MonoBehaviour
         {
             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
             isGrounded = false;
+        }
+    }
+    
+    //Set Alle OnTrigger too Destroy
+    
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("Tutorial"); //mit namen angeben, nicht mit ID
         }
         
         /*foreach (Pickup pickup in pullPickups)
