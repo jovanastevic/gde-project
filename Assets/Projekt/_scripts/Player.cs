@@ -73,25 +73,26 @@ public class Player : MonoBehaviour
         pullPickups.Remove(pickup);
     }
     
-
-    //Movement Jump W A S D
     private void FixedUpdate()
     {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
         if (v < 0) v = 0;
-
-        Vector3 tempVect = new Vector3(h, 0, v);
-        tempVect = tempVect.normalized * speed * Time.deltaTime;
-        rb.MovePosition(transform.position + tempVect);
-
+        
+        Vector3 moveDir = new Vector3(h, 0, v).normalized;
+        
+        Vector3 newVelocity = moveDir * speed;
+        newVelocity.y = rb.linearVelocity.y;
+    
+        rb.linearVelocity = newVelocity;
+        
         if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z); 
             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
             isGrounded = false;
         }
     }
-
 
     // Update is called once per frame
     void Update()

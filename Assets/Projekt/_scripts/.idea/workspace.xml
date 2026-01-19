@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373d186c-7dfb-418a-bd1e-61303441acac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Kreissäge.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Kreissäge.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Fonts/Galindo-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Fonts/Galindo-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Materials/Enemy.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Materials/Enemy.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Materials/Floor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../Materials/Floor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/GameOver.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/GameOver.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/GamePlay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,32 +24,33 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/StartGameMenu.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/jovanastevic/Documents/uni/FH/WS2025/GDE/semesterprojekt/gde-project/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CameraFollowPlayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Player.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="38Re6koWwwJVrdaIieui8FUjcgT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "game-menu",
-    "last_opened_file_path": "/Users/jovanastevic/Documents/uni/FH/WS2025/GDE/semesterprojekt/gde-project/Assets/Projekt/_scripts",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jovanastevic/Documents/uni/FH/WS2025/GDE/semesterprojekt/gde-project/Assets/Projekt/_scripts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,7 +59,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1768766637900</updated>
-      <workItem from="1768766639071" duration="2978000" />
+      <workItem from="1768766639071" duration="3688000" />
+      <workItem from="1768824089009" duration="211000" />
+      <workItem from="1768824620110" duration="7153000" />
+      <workItem from="1768858457305" duration="1720000" />
     </task>
     <servers />
   </component>

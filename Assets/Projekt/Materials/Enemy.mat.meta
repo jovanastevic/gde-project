@@ -1,13 +1,8 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Projekt/Materials/Enemy.mat.meta
 guid: b553b5b49ed830b43ac8dfc6ba48d936
 NativeFormatImporter:
-========
-guid: 503afbb16042c4766a2fdd58e2a7f91c
-DefaultImporter:
->>>>>>>> game-menu:Assets/Projekt/Scenes/GameOver.unity.meta
   externalObjects: {}
-  mainObjectFileID: 2100000
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
