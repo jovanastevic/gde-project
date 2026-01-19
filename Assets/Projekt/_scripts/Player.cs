@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public event Action ScoreChanged;
+    public static event Action PlayerIsDead;
     [SerializeField] private float speed = 15f;
     [SerializeField] private PickupSensor pickupSensor;
 
@@ -53,7 +54,7 @@ public class Player : MonoBehaviour
     }
     private void HandleDeath()
     {
-        Debug.Log("Player is dead");
+        PlayerIsDead?.Invoke();
     }
     private void PickupSensor_PickupEntered(Pickup pickup)
     {
