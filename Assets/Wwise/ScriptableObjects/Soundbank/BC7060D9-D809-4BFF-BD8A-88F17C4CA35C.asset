@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5973062a84fb438b903c322bfc61f13, type: 3}
+  m_Name: BC7060D9-D809-4BFF-BD8A-88F17C4CA35C
+  m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseBankReference
+  objectName: Main_Soundbank
+  id: 2228651116
+  guid: BC7060D9-D809-4BFF-BD8A-88F17C4CA35C

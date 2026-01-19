@@ -1,0 +1,45 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2228651116",
+    "Type": "User",
+    "GUID": "{BC7060D9-D809-4BFF-BD8A-88F17C4CA35C}",
+    "Language": "SFX",
+    "Hash": "{E31F6ACF-2A93-23D6-4514-CB991416FCBD}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main_Soundbank",
+    "ShortName": "Main_Soundbank",
+    "Path": "Main_Soundbank.bnk",
+    "Media": [
+     {
+      "Id": "64857166",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "amen1.wav",
+      "CachePath": "1B/{1B450CD8-DEE5-ADAB-EB07-FF956D3D1B6C}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1701151208",
+      "Name": "EventAmenTest",
+      "ObjectPath": "\\Events\\Default Work Unit\\EventAmenTest",
+      "GUID": "{993DDE00-0297-4960-8CF9-108E43B4F1C0}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "64857166"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6FBF08F6-326C-D147-2446-475B5C0EDC34}"
+ }
+}

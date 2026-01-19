@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1701151208	EventAmenTest			\Default Work Unit\EventAmenTest	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	64857166	amen1	.cache\1B\{1B450CD8-DEE5-ADAB-EB07-FF956D3D1B6C}.wem		\Containers\Default Work Unit\amen1		933316
+
