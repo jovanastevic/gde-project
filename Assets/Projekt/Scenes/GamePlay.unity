@@ -382,7 +382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f952fd6a50ab1a4bbab66676a68b0d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameLogic
-  player: {fileID: 0}
+  player: {fileID: 1380037814}
   PlayerName: 
 --- !u!1 &997918351
 GameObject:

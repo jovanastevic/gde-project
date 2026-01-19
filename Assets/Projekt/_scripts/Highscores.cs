@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
-//using Newtonsoft.Json;
+using Newtonsoft.Json;
 using UnityEngine;
 
 public class Highscores 
@@ -26,9 +26,9 @@ public class Highscores
 
     private void Save()
     {
-        //string json = JsonConvert.SerializeObject(entries);
+        string json = JsonConvert.SerializeObject(entries);
         string path = Path.Combine(Application.persistentDataPath, fileName);
-       // File.WriteAllText(path, json);
+        File.WriteAllText(path, json);
     }
     
     private void Load()
@@ -37,7 +37,7 @@ public class Highscores
         if (File.Exists(path))
         {
             string json = File.ReadAllText(path);
-            //entries = JsonConvert.DeserializeObject<List<Entry>>(json);
+            entries = JsonConvert.DeserializeObject<List<Entry>>(json);
         }
     }
     public void AddEntry(string name, int score)

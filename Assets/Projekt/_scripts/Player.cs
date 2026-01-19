@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     private List<Pickup> pullPickups = new List<Pickup>();
 
     private int score = 0;
+    
+    public static int FinalScore;
 
     public int Score
     {
@@ -54,6 +56,7 @@ public class Player : MonoBehaviour
     }
     private void HandleDeath()
     {
+        FinalScore = score;
         PlayerIsDead?.Invoke();
     }
     private void PickupSensor_PickupEntered(Pickup pickup)

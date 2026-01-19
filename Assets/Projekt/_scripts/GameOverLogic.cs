@@ -1,26 +1,24 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameLogicStartMenu : MonoBehaviour
+public class GameOverLogic : MonoBehaviour
 {
-    [SerializeField] private TMPro.TMP_InputField nameField;
+    [SerializeField] private TMPro.TMP_Text ScoreLabel;
     [SerializeField] private TMPro.TMP_Text highscoreLable;
-
+    
     public void Start()
     {
+        ScoreLabel.text = $"Score: {Player.FinalScore}";
         Highscores highscores = new Highscores();
         highscoreLable.text = $"{highscores.ToString()}\n";
         
     }
-
     public void StartClicked()
     {
-        string playerName = nameField.text;
-        GameLogic.PlayerName = playerName;
+        Player.FinalScore = 0;
         SceneManager.LoadScene("GamePlay");
     }
-
+    
     public void QuitButtonClicked()
     {
         Debug.Log("Quit button clicked");

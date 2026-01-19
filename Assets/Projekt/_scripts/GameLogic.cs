@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameLogic : MonoBehaviour
 {
     [SerializeField] private Player player;
-    public string PlayerName = "";
+    public static string PlayerName = "";
     
 
     private void OnEnable()
@@ -20,6 +20,9 @@ public class GameLogic : MonoBehaviour
     
     private void GameOver()
     {
+        Debug.Log(PlayerName);
+        Highscores highscores = new Highscores();
+        highscores.AddEntry(PlayerName, player.Score);
         SceneManager.LoadScene("GameOver");
         
     }
