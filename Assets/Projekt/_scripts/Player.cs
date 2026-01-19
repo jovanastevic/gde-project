@@ -93,7 +93,8 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            Debug.Log("Escape");
+            SceneManager.LoadScene("StartGameMenu");
         }
 
         if (Input.GetKeyDown(KeyCode.R))
