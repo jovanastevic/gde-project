@@ -75,6 +75,7 @@ public class Player : MonoBehaviour
     {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
+        if (v < 0) v = 0;
 
         Vector3 tempVect = new Vector3(h, 0, v);
         tempVect = tempVect.normalized * speed * Time.deltaTime;
