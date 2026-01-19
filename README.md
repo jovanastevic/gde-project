@@ -28,12 +28,12 @@ Highscore System [ ]:
 Game Over:
 
 - Highscore aktualisieren [ ]
-- "Game Over" Text [ ]
+- "Game Over" Text [X]
 - Auslösen, wenn Player abstürzt oder Gegner berührt [ ]
 
 Steuerung über Delegates & Events:
 
-- WASD, Space, Esc (Spiel verlassen) [ ]
+- WASD, Space, Esc (Spiel verlassen) [X]
 - Springen über Forces umsetzen (Character Controller aber auch erlaubt) [ ]
 - Sprung -> Energie wird weniger, lädt sich aber mit der Zeit auf [ ]
 - Lange Space Taste halten -> höher/weiter Sprung [ ]
