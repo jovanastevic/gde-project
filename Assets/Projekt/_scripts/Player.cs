@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,7 @@ public class Player : MonoBehaviour
 {
     public event Action ScoreChanged;
     public static event Action PlayerIsDead;
+    public static event Action PlayerWon;
     [SerializeField] private float speed = 15f;
     [SerializeField] private PickupSensor pickupSensor;
 
@@ -50,11 +52,19 @@ public class Player : MonoBehaviour
     private void OnEnable()
     {
         KillSensor.KillAnyPlayer += HandleDeath;
+        WinSensor.WinGame += HandleWin;
     }
 
     private void OnDisable()
     {
         KillSensor.KillAnyPlayer -= HandleDeath;
+        WinSensor.WinGame -= HandleWin;
+    }
+
+    private void HandleWin()
+    {
+        FinalScore = score;
+        PlayerWon?.Invoke();
     }
     private void HandleDeath()
     {
