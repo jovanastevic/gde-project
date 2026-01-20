@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     public static event Action PlayerIsDead;
     public static event Action PlayerWon;
     [SerializeField] private float speed = 15f;
-    [SerializeField] private float speedBoost = 1.0f;
+    [SerializeField] private float speedBoost = 0.5f;
     [SerializeField] private PickupSensor pickupSensor;
 
     public float jumpForce = 2.0f;
