@@ -93,12 +93,17 @@ public class Player : MonoBehaviour
         float v = Input.GetAxisRaw("Vertical");
         // if (v < 0) v = 0; //disable walking backwards
         
+        
         Vector3 moveDir = new Vector3(h, 0, v).normalized;
         
         Vector3 newVelocity = moveDir * speed;
         newVelocity.y = rb.linearVelocity.y;
     
         rb.linearVelocity = newVelocity;
+        if (moveDir != Vector3.zero)
+        {
+            transform.rotation = Quaternion.LookRotation(moveDir);
+        }
         
         if (Input.GetKey(KeyCode.Space) && isGrounded)
         {

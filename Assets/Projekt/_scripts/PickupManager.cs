@@ -33,12 +33,10 @@ public class PickupManager : MonoBehaviour
 
     private Pickup CreatePickup()
     {
-        float[] possiblePos =
-            { -5f, 0, 5f };
-        Vector3 playerPos = new Vector3(possiblePos[Random.Range(0, 3)], 1,
-            Player.transform.position.z);
-        Vector3 spawnOffset = Player.transform.forward * 10f;
-        Vector3 targetPosition = playerPos + spawnOffset;
+        float[] possiblePos = { -5f, 0, 5f };
+
+        float playerPosZ = Player.transform.position.z + 15f;
+        Vector3 targetPosition = new Vector3(possiblePos[Random.Range(0,3)], 1, playerPosZ);
         Pickup pickup = pickupPool.GetPoolObjekt();
         pickup.transform.position = targetPosition;
         return pickup;
