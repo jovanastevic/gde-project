@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="373d186c-7dfb-418a-bd1e-61303441acac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../Fonts/Galindo-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Fonts/Galindo-Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +16,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/CameraFollowPlayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CameraFollowPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GameLogic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Player.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -56,6 +56,7 @@
       <workItem from="1768824089009" duration="211000" />
       <workItem from="1768824620110" duration="7153000" />
       <workItem from="1768858457305" duration="2691000" />
+      <workItem from="1768866380594" duration="2285000" />
     </task>
     <servers />
   </component>
