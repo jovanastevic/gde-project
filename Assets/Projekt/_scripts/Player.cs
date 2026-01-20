@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public static event Action PlayerIsDead;
     public static event Action PlayerWon;
     [SerializeField] private float speed = 15f;
+    [SerializeField] private float speedBoost = 1.0f;
     [SerializeField] private PickupSensor pickupSensor;
 
     public float jumpForce = 2.0f;
@@ -74,6 +75,7 @@ public class Player : MonoBehaviour
     private void PickupSensor_PickupEntered(Pickup pickup)
     {
         Score++;
+        speed += speedBoost;
         pullPickups.Remove(pickup);
         // Destroy(pickup.gameObject);
         // pickup.gameObject.SetActive(false);
@@ -89,7 +91,7 @@ public class Player : MonoBehaviour
     {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
-        if (v < 0) v = 0;
+        // if (v < 0) v = 0; //disable walking backwards
         
         Vector3 moveDir = new Vector3(h, 0, v).normalized;
         
