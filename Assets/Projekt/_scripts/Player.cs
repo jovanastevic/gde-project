@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     [SerializeField] private PickupSensor pickupSensor;
 
     public float jumpForce = 2.0f;
+    [SerializeField] private float fallMultiplier = 2.5f; 
+    [SerializeField] private float lowJumpMultiplier = 2f;
     private Vector3 jump;
     private bool isGrounded;
     private Rigidbody rb;
@@ -91,6 +93,17 @@ public class Player : MonoBehaviour
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z); 
             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
             isGrounded = false;
+        }
+        // 3. BESSERE PHYSIK (Anti-Mond)
+        // Zieht schneller runter beim Fallen
+        if (rb.linearVelocity.y < 0)
+        {
+            rb.linearVelocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        }
+        // Kleiner Hopser wenn man Space nur antippt
+        else if (rb.linearVelocity.y > 0 && !Input.GetKey(KeyCode.Space))
+        {
+            rb.linearVelocity += Vector3.up * Physics.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
     }
 

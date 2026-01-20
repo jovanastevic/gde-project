@@ -1319,7 +1319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   Player: {fileID: 1380037813}
-  speed: 10
+  speed: 5
 --- !u!4 &254789940
 Transform:
   m_ObjectHideFlags: 0
@@ -5254,9 +5254,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cf6cb93868c4e378ef7c2081302d692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  speed: 15
+  speed: 10
   pickupSensor: {fileID: 1077372543}
-  jumpForce: 10
+  jumpForce: 12
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
 --- !u!54 &1380037815
 Rigidbody:
   m_ObjectHideFlags: 0

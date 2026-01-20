@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="373d186c-7dfb-418a-bd1e-61303441acac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Kreissäge.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Kreissäge.fbx.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Fonts/Galindo-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Fonts/Galindo-Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Materials/Enemy.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Materials/Enemy.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Materials/Floor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../Materials/Floor.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scenes/GameOver.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/GameOver.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/GamePlay.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +55,7 @@
       <workItem from="1768766639071" duration="3688000" />
       <workItem from="1768824089009" duration="211000" />
       <workItem from="1768824620110" duration="7153000" />
-      <workItem from="1768858457305" duration="1720000" />
+      <workItem from="1768858457305" duration="2691000" />
     </task>
     <servers />
   </component>
