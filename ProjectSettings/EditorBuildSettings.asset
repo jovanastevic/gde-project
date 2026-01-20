@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Projekt/Scenes/GamePlay.unity
     guid: a972335ee1ad76f48a0e5096408edbef
   - enabled: 1
+    path: Assets/Projekt/Scenes/WinScreen.unity
+    guid: 67172351b48735845abccd7ba637b034
+  - enabled: 1
     path: Assets/Projekt/Scenes/GameOver.unity
     guid: 4ac341e875e94f647a72497bbfccb810
   m_configObjects:
