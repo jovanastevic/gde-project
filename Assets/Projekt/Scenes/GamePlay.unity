@@ -5257,8 +5257,8 @@ MonoBehaviour:
   speed: 10
   pickupSensor: {fileID: 1077372543}
   jumpForce: 12
-  fallMultiplier: 2.5
-  lowJumpMultiplier: 2
+  fallMultiplier: 4
+  lowJumpMultiplier: 3
 --- !u!54 &1380037815
 Rigidbody:
   m_ObjectHideFlags: 0
