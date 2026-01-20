@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float speed = 15f;
     [SerializeField] private float speedBoost = 0.5f;
     [SerializeField] private PickupSensor pickupSensor;
+    [SerializeField] private Enemy enemy;
 
     public float jumpForce = 2.0f;
     [SerializeField] private float fallMultiplier = 2.5f; 
@@ -76,6 +77,7 @@ public class Player : MonoBehaviour
     {
         Score++;
         speed += speedBoost;
+        enemy.GetComponent<Enemy>().speed += speedBoost;
         pullPickups.Remove(pickup);
         // Destroy(pickup.gameObject);
         // pickup.gameObject.SetActive(false);

@@ -4,7 +4,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private Transform Player;
-    [SerializeField] private float speed = 5f;
+    [SerializeField] public float speed = 5f;
     private Rigidbody rb;
     private Animator _animator;
     private bool isDead = false;
