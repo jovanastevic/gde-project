@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{23D031EB-D0F7-4197-B34E-66410DA0BA19}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{23D031EB-D0F7-4197-B34E-66410DA0BA19}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="ATMO" ID="{D4B76636-29F0-4D30-BFAE-3454BBB8441D}">
+					<ChildrenList>
+						<Action Name="" ID="{BBE59B6E-9A70-420B-8186-4E4D41486B03}" ShortID="783870830">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="snowstorm ambience" ID="{46EA7211-F639-42DC-936B-EBCEC2B4D723}" WorkUnitID="{52E234A1-5A19-45B1-A39F-517C780B2D92}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SOUNDTRACK" ID="{5BAFEC6A-C44F-4EC3-9337-8245C094031E}">
+					<ChildrenList>
+						<Action Name="" ID="{966C7709-7FCA-4957-92C3-2B30DA56738D}" ShortID="441499328">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="soundtrack" ID="{454DFA59-8AB5-4573-A63B-583645F69599}" WorkUnitID="{52E234A1-5A19-45B1-A39F-517C780B2D92}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FROG_BIG" ID="{6CBF4236-A819-4904-8799-02528B22F47C}">
+					<ChildrenList>
+						<Action Name="" ID="{9DE7CD80-15F6-4440-ADDF-3082D264A9C6}" ShortID="740625449">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="frogBIG" ID="{D390BF54-D738-466C-B0AD-8B85C3798998}" WorkUnitID="{52E234A1-5A19-45B1-A39F-517C780B2D92}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FROG_SMALL" ID="{65CA1FC7-961B-48E4-A824-661A79E2E890}">
+					<ChildrenList>
+						<Action Name="" ID="{5BE92056-F223-473F-8372-66E5CDED9AC3}" ShortID="90648656">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Random Container SMALLFROG" ID="{95BA5A02-86DF-4875-9F36-88FACD4DCDDE}" WorkUnitID="{52E234A1-5A19-45B1-A39F-517C780B2D92}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SAWBLADE" ID="{E94F138B-EE29-47C6-9D8D-15FE0B68B864}">
+					<ChildrenList>
+						<Action Name="" ID="{542148F1-AC3A-4F30-801E-B53E59972B59}" ShortID="1035661394">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MischerAtmo" ID="{7F656F2E-7F98-47AF-A819-A8D356E22146}" WorkUnitID="{52E234A1-5A19-45B1-A39F-517C780B2D92}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BOLT_PICKUP" ID="{7D690DD6-63E8-4546-8E03-73661161FABB}">
+					<ChildrenList>
+						<Action Name="" ID="{17604FF1-DFC0-49EB-8996-44077A3ECD46}" ShortID="969828257">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Random Container BOLT" ID="{28BA032C-DD6D-45D1-8F58-E2D2B163C4EA}" WorkUnitID="{52E234A1-5A19-45B1-A39F-517C780B2D92}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BOMBOM_STEPS" ID="{4B9BEB8C-0B35-4143-A307-8CB9F663A16D}">
+					<ChildrenList>
+						<Action Name="" ID="{FBC9B3DD-F37E-4EC4-AF83-B99998B3DEF7}" ShortID="480047221">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Blend Container SNOW_STEPS" ID="{6BE32874-E166-49F5-A03E-6C06E4B86EF5}" WorkUnitID="{52E234A1-5A19-45B1-A39F-517C780B2D92}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="GAMEOVER" ID="{502B8374-4187-4246-99EC-FF719EA6F83A}">
+					<ChildrenList>
+						<Action Name="" ID="{7D19C731-A336-4DF2-851D-59859838F407}" ShortID="665836121">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="VICTORY" ID="{85B82D26-2056-4750-AB9C-BA42A3257593}">
+					<ChildrenList>
+						<Action Name="" ID="{77F08902-1C93-41C6-A2D9-432520E0EC77}" ShortID="439556472">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 
@@ -7,18 +8,34 @@ public class Enemy : MonoBehaviour
     [SerializeField] public float speed = 5f;
     private Rigidbody rb;
     private Animator _animator;
-    private bool isDead = false;
+    public bool isDead = false;
+
+    private void OnEnable()
+    {
+        FrogDies.Frogdead += HandleForgDeath;
+    }
+
+    private void OnDisable()
+    {
+        FrogDies.Frogdead -= HandleForgDeath;
+    }
+
+    void HandleForgDeath()
+    {
+        Die();
+    }
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        
+
         _animator = GetComponentInChildren<Animator>();
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.K) && !isDead)
+        if (Input.GetKeyDown(KeyCode.K) && !isDead)
         {
             Die();
         }
@@ -27,7 +44,7 @@ public class Enemy : MonoBehaviour
     void FixedUpdate()
     {
         if (Player == null) return;
-        
+
         Vector3 direction = Player.position - transform.position;
 
         direction.y = 0;
@@ -36,30 +53,33 @@ public class Enemy : MonoBehaviour
         {
             transform.rotation = Quaternion.LookRotation(direction);
         }
-        
+
         rb.AddForce(direction.normalized * speed);
-        if(rb.linearVelocity.magnitude > speed)
+        if (rb.linearVelocity.magnitude > speed)
         {
             rb.linearVelocity = rb.linearVelocity.normalized * speed;
         }
-        
-        if(_animator != null)
+
+        if (_animator != null)
         {
             _animator.SetFloat("speed", rb.linearVelocity.magnitude);
         }
     }
-    
+
     void Die()
     {
-        isDead = true;
-        
-        rb.linearVelocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
-        rb.isKinematic = true;
-        
-        if(_animator != null)
+        if (!isDead)
         {
-            _animator.SetTrigger("die");
+            isDead = true;
+
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            rb.isKinematic = true;
+
+            if (_animator != null)
+            {
+                _animator.SetTrigger("die");
+            }
         }
         //
         // this.enabled = false;

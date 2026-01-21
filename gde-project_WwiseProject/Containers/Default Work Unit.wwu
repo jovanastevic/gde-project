@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{52E234A1-5A19-45B1-A39F-517C780B2D92}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Default Work Unit" ID="{52E234A1-5A19-45B1-A39F-517C780B2D92}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="gde-project-samples" ID="{B0C1F55D-F17C-4904-90E5-69190901BF01}" ShortID="37545709">
+					<ChildrenList>
+						<Sound Name="boltAmbience" ID="{C94502CA-72DA-4837-87F4-A493B69892F1}" ShortID="441781217">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="boltAmbience" ID="{47F27E97-41EC-41AD-B15D-2CF33903A142}">
+									<Language>SFX</Language>
+									<AudioFile>gde-project-samples\boltAmbience.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="544739192"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="boltAmbience" ID="{47F27E97-41EC-41AD-B15D-2CF33903A142}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="frogBIG" ID="{D390BF54-D738-466C-B0AD-8B85C3798998}" ShortID="259122461">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-700</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="BIG_FROG_Attenuation" ID="{C5161D20-0BA5-4E8F-A3E6-321C01FBD27F}" WorkUnitID="{0DE8A6B9-A97A-4ED2-93A6-909389D3EA42}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="frogBIG" ID="{5AD3F165-092F-4346-96E8-1D4DA02AD0AF}">
+									<Language>SFX</Language>
+									<AudioFile>gde-project-samples\frogBIG.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="719162204"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="frogBIG" ID="{5AD3F165-092F-4346-96E8-1D4DA02AD0AF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="frogqauck" ID="{0B9F066B-BFC1-48CF-91AA-FE30E33E8AC1}" ShortID="295914972">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="frogqauck" ID="{479AD4BC-AE62-470F-AB58-70CFEB6388F1}">
+									<Language>SFX</Language>
+									<AudioFile>gde-project-samples\frogqauck.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1032904512"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="frogqauck" ID="{479AD4BC-AE62-470F-AB58-70CFEB6388F1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="MischerAtmo" ID="{7F656F2E-7F98-47AF-A819-A8D356E22146}" ShortID="445550636">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>42</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>1720</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="SAWBLADE_Attenuation" ID="{1AF72180-B58B-4391-B155-BC3F628A1D70}" WorkUnitID="{0DE8A6B9-A97A-4ED2-93A6-909389D3EA42}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MischerAtmo" ID="{22E55D1D-39B3-40E7-916C-EDC351E4D2DE}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="9.49675324675324"/>
+										<Property Name="TrimEnd" Type="Real64" Value="14.1818181818181"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>gde-project-samples\MischerAtmo.WAV</AudioFile>
+									<MediaIDList>
+										<MediaID ID="974085179"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MischerAtmo" ID="{22E55D1D-39B3-40E7-916C-EDC351E4D2DE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="snowstorm ambience" ID="{46EA7211-F639-42DC-936B-EBCEC2B4D723}" ShortID="41173980">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>34</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-21</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="snowstorm ambience" ID="{EC2B0E59-566A-4CA7-8DBE-5B149BD32102}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="6.27359841086648"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="3.92099900679153"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>gde-project-samples\snowstorm ambience.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="636364734"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="snowstorm ambience" ID="{EC2B0E59-566A-4CA7-8DBE-5B149BD32102}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="soundtrack" ID="{454DFA59-8AB5-4573-A63B-583645F69599}" ShortID="1026413913">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>34</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="soundtrack" ID="{C8B507F8-AFA7-4C4C-B7E5-D3C6801C0C90}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.56695096269506"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="3.20192133915889"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="53.6321824309114"/>
+										<Property Name="TrimEnd" Type="Real64" Value="143.285974312126"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>gde-project-samples\soundtrack.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="763429237"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="soundtrack" ID="{C8B507F8-AFA7-4C4C-B7E5-D3C6801C0C90}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Random Container BOLT" ID="{28BA032C-DD6D-45D1-8F58-E2D2B163C4EA}" ShortID="36213497">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="boltPickup1" ID="{48AA4FB1-0C1F-48A2-83FB-521F43A741B8}" ShortID="352762170">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="boltPickup1" ID="{CC51CF2D-D901-46DE-96CA-1BEEFCE65338}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.313483548320197"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.838780465182136"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gde-project-samples\boltPickup1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="317656047"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="boltPickup1" ID="{CC51CF2D-D901-46DE-96CA-1BEEFCE65338}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="boltPickup2" ID="{4A7CC85E-3B48-4F58-8593-44728774D182}" ShortID="1031966614">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="boltPickup2" ID="{7098F1B4-5CCD-4125-AFCF-E50FF369C248}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.355846189985088"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.92350574851192"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gde-project-samples\boltPickup2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="975968353"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="boltPickup2" ID="{7098F1B4-5CCD-4125-AFCF-E50FF369C248}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="boltPickup3" ID="{C3C7E528-16A6-4AAF-9EC9-352057010BE3}" ShortID="909087904">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="boltPickup3" ID="{C9BEA582-0C5F-42FE-8BAB-BE02FBA416DD}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.263253684137382"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.76343552759582"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gde-project-samples\boltPickup3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1021850817"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="boltPickup3" ID="{C9BEA582-0C5F-42FE-8BAB-BE02FBA416DD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="boltPickup4" ID="{5249AC08-32AE-4401-A55D-64B8325624D7}" ShortID="560501697">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="boltPickup4" ID="{EF762149-784F-4DE5-9E70-1FF5403C77A7}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.377330280596914"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.833636510032456"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gde-project-samples\boltPickup4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="753291328"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="boltPickup4" ID="{EF762149-784F-4DE5-9E70-1FF5403C77A7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="boltPickup5" ID="{457BFBE7-3973-4868-88D3-426F6A903999}" ShortID="203354813">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="boltPickup5" ID="{7CB4CA23-EF49-4B84-829A-BF5C7E80CB0B}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.368555157792334"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.00036384331946"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gde-project-samples\boltPickup5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="389566166"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="boltPickup5" ID="{7CB4CA23-EF49-4B84-829A-BF5C7E80CB0B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="boltPickup6" ID="{D214ADE7-294A-487A-B286-D0DEDF16B3CC}" ShortID="102565234">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="boltPickup6" ID="{0602304B-AD71-448B-996B-2EA3518D3926}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.298354175355699"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.930162860882829"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gde-project-samples\boltPickup6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="5141320"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="boltPickup6" ID="{0602304B-AD71-448B-996B-2EA3518D3926}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Random Container SMALLFROG" ID="{95BA5A02-86DF-4875-9F36-88FACD4DCDDE}" ShortID="991778852">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>680</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E1CF7793-EB2B-44FE-82B5-EBBF73C9F9EB}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="675"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="SMALL_FROG_Attenuation" ID="{56E03660-C993-44AD-8B7F-99DDB7A47079}" WorkUnitID="{0DE8A6B9-A97A-4ED2-93A6-909389D3EA42}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="frogSMALL1" ID="{ED6A1A1C-6DD6-428D-9F5C-9EAD57924FE1}" ShortID="520025716">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="frogSMALL1" ID="{13D0262F-0F8C-4CD3-B850-E80B77B2F983}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.04645890701776"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gde-project-samples\frogSMALL1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="842674018"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="frogSMALL1" ID="{13D0262F-0F8C-4CD3-B850-E80B77B2F983}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="frogSMALL2" ID="{ED6AF78D-4775-4AA4-A54C-216DB449B684}" ShortID="521283547">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="frogSMALL2" ID="{19160A3B-9BBB-4F1B-9ACF-64A831BA362B}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.21168923465685"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gde-project-samples\frogSMALL2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="505996265"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="frogSMALL2" ID="{19160A3B-9BBB-4F1B-9ACF-64A831BA362B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="frogSMALL3" ID="{BF2B9DD9-B195-4921-A5B4-23CDD793DCD2}" ShortID="387175966">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="frogSMALL3" ID="{35E689E3-60DC-4540-B2D1-7BCC4BF098FA}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.11989444288714"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gde-project-samples\frogSMALL3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="411118296"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="frogSMALL3" ID="{35E689E3-60DC-4540-B2D1-7BCC4BF098FA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<BlendContainer Name="Blend Container SNOW_STEPS" ID="{6BE32874-E166-49F5-A03E-6C06E4B86EF5}" ShortID="784654134">
+							<PropertyList>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{719E2626-8BB4-4A7D-A90D-5CAB06FE61EA}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="1000"/>
+													<Property Name="Min" Type="Real64" Value="-1000"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="snowStep1" ID="{04DE5853-8EDD-476F-BE81-D5E9E62A2A3F}" ShortID="832543565">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{90BBF3B2-D856-4A22-A195-76C81A3C73E6}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="500"/>
+															<Property Name="Min" Type="Real64" Value="-500"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="snowStep1" ID="{CBE4951A-EF3F-4EB3-825F-708AC39203FF}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.594638602723291"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gde-project-samples\snowStep1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="253796612"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="snowStep1" ID="{CBE4951A-EF3F-4EB3-825F-708AC39203FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="snowStep3" ID="{CB879319-0F52-460F-B35D-2894FDC78C9E}" ShortID="680914842">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{55B4F70A-C1EE-43D1-A201-96B65E4D3AAD}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="snowStep3" ID="{AE7FA151-F705-4E2A-B1DD-436198414115}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.423281389839205"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gde-project-samples\snowStep3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="539863059"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="snowStep3" ID="{AE7FA151-F705-4E2A-B1DD-436198414115}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="snowStep5" ID="{E0335CA3-B561-4B8A-A667-D002713DB125}" ShortID="69626065">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B74FE1E8-8944-432A-BA0D-65362740E1A1}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="snowStep5" ID="{3223F9AD-7A32-4FA7-897D-40A8DABED010}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.414864191410345"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gde-project-samples\snowStep5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="21376309"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="snowStep5" ID="{3223F9AD-7A32-4FA7-897D-40A8DABED010}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<BlendTrackList>
+								<BlendTrack Name="New Blend Track" ID="{0DD39125-8F70-4CF7-9673-0C2233864324}" ShortID="239000046">
+									<PropertyList>
+										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="LayerCrossFadeControlInput">
+											<ObjectRef Name="Player_Speed_Sound" ID="{A43C6CE3-168C-46ED-B420-0BED68540537}" WorkUnitID="{6B0B12E1-6188-456E-8F2A-50BED72F6E1D}"/>
+										</Reference>
+									</ReferenceList>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="snowStep1" ID="{04DE5853-8EDD-476F-BE81-D5E9E62A2A3F}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>0</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>33.3333333333333</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+										<BlendTrackAssoc>
+											<ItemRef Name="snowStep3" ID="{CB879319-0F52-460F-B35D-2894FDC78C9E}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>26.8292682926829</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>66.6666666666667</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+										<BlendTrackAssoc>
+											<ItemRef Name="snowStep5" ID="{E0335CA3-B561-4B8A-A667-D002713DB125}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>59.349593495935</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>100</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+							</BlendTrackList>
+						</BlendContainer>
+						<SwitchContainer Name="New Switch Container" ID="{EE02319E-41AF-4841-B42F-C431BD377E6D}" ShortID="284644793">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="walkingsnow" ID="{0D677AAA-E5B9-45E4-9668-DAA2BC8E73EB}" ShortID="883944604">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0AFF7E60-572E-440A-8EB0-F0394E54709D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D2F5195C-68C7-4859-B2F9-FC4B64402E4E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="walkingsnow" ID="{3A209273-BECE-40C7-9F42-DCBB2DFE76DF}">
+											<Language>SFX</Language>
+											<AudioFile>gde-project-samples\walkingsnow.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="715611734"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="walkingsnow" ID="{3A209273-BECE-40C7-9F42-DCBB2DFE76DF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="walkingsnow" ID="{0D677AAA-E5B9-45E4-9668-DAA2BC8E73EB}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

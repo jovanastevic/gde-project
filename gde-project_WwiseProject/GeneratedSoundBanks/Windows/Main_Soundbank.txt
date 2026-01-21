@@ -1,0 +1,32 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1854978435	FROG_SMALL			\Default Work Unit\FROG_SMALL	
+	1957989366	SAWBLADE			\Default Work Unit\SAWBLADE	
+	2082426231	SOUNDTRACK			\Default Work Unit\SOUNDTRACK	
+	2685001988	FROG_BIG			\Default Work Unit\FROG_BIG	
+	2716678721	VICTORY			\Default Work Unit\VICTORY	
+	2984628487	BOLT_PICKUP			\Default Work Unit\BOLT_PICKUP	
+	3083130986	ATMO			\Default Work Unit\ATMO	
+	3329729329	BOMBOM_STEPS			\Default Work Unit\BOMBOM_STEPS	
+	4158285989	GAMEOVER			\Default Work Unit\GAMEOVER	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1148647542	Player_Speed_Sound			\Default Work Unit\Player_Speed_Sound	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	5141320	boltPickup6	.cache\C7\{C7B27988-F047-496A-2083-391E9D41A561}.wem		\Containers\Default Work Unit\gde-project-samples\Random Container BOLT\boltPickup6		121404
+	21376309	snowStep5	.cache\E8\{E89CB538-21E0-1F0D-1F34-453E42AEB2F0}.wem		\Containers\Default Work Unit\gde-project-samples\Blend Container SNOW_STEPS\snowStep5		79748
+	253796612	snowStep1	.cache\A0\{A0B404D5-3EFB-C126-64D8-50560F1DE5E8}.wem		\Containers\Default Work Unit\gde-project-samples\Blend Container SNOW_STEPS\snowStep1		114268
+	317656047	boltPickup1	.cache\F8\{F8F2DFD6-5D3F-C82C-44BA-56FE08B2FEFB}.wem		\Containers\Default Work Unit\gde-project-samples\Random Container BOLT\boltPickup1		100952
+	389566166	boltPickup5	.cache\94\{946D6934-523A-B0EB-02D7-E572B8FEAB8E}.wem		\Containers\Default Work Unit\gde-project-samples\Random Container BOLT\boltPickup5		121400
+	411118296	frogSMALL3	.cache\EA\{EACF6950-41E8-4DC4-651A-BD99D671A596}.wem		\Containers\Default Work Unit\gde-project-samples\Random Container SMALLFROG\frogSMALL3		215116
+	505996265	frogSMALL2	.cache\8C\{8C8949A6-B330-9FF1-D556-C5568DBAF07A}.wem		\Containers\Default Work Unit\gde-project-samples\Random Container SMALLFROG\frogSMALL2		232740
+	539863059	snowStep3	.cache\6E\{6ED523B0-8D47-0436-D6F2-5A48324D03BB}.wem		\Containers\Default Work Unit\gde-project-samples\Blend Container SNOW_STEPS\snowStep3		81368
+	636364734	snowstorm ambience	.cache\1C\{1C35E329-C408-1D0E-719C-D159E7865B18}.wem		\Containers\Default Work Unit\gde-project-samples\snowstorm ambience		42606612
+	719162204	frogBIG	.cache\9A\{9A6A7169-F388-2D88-84A9-83217B4FAE27}.wem		\Containers\Default Work Unit\gde-project-samples\frogBIG		3875652
+	753291328	boltPickup4	.cache\28\{28A8420C-2B32-4DB5-8FF2-5E50E7C34700}.wem		\Containers\Default Work Unit\gde-project-samples\Random Container BOLT\boltPickup4		87708
+	763429237	soundtrack	.cache\1F\{1F824BFF-F8F5-FB90-D6EA-32DC685C52E9}.wem		\Containers\Default Work Unit\gde-project-samples\soundtrack		17213624
+	842674018	frogSMALL1	.cache\8E\{8EF492D0-46BC-59FC-0472-0106052C72AF}.wem		\Containers\Default Work Unit\gde-project-samples\Random Container SMALLFROG\frogSMALL1		201016
+	974085179	MischerAtmo	.cache\9A\{9A346D58-A6C4-D0DD-C734-A5E4450889A3}.wem		\Containers\Default Work Unit\gde-project-samples\MischerAtmo		449862
+	975968353	boltPickup2	.cache\5D\{5DD9A22D-AC88-E0C3-D412-91A290453062}.wem		\Containers\Default Work Unit\gde-project-samples\Random Container BOLT\boltPickup2		109084
+	1021850817	boltPickup3	.cache\C7\{C79E2338-59FE-8ACF-808F-949EC29181F9}.wem		\Containers\Default Work Unit\gde-project-samples\Random Container BOLT\boltPickup3		96132
+

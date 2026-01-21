@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6B0B12E1-6188-456E-8F2A-50BED72F6E1D}" SchemaVersion="133">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{6B0B12E1-6188-456E-8F2A-50BED72F6E1D}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Player_Speed_Sound" ID="{A43C6CE3-168C-46ED-B420-0BED68540537}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

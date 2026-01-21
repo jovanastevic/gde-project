@@ -1,0 +1,297 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2228651116",
+    "Type": "User",
+    "GUID": "{C4C987A2-A204-4812-8643-2D3D6DF98E39}",
+    "Language": "SFX",
+    "Hash": "{93BF13B4-B850-9D7F-83BA-FDE531DDA7E4}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main_Soundbank",
+    "ShortName": "Main_Soundbank",
+    "Path": "Main_Soundbank.bnk",
+    "Media": [
+     {
+      "Id": "5141320",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gde-project-samples\\boltPickup6.wav",
+      "CachePath": "C7/{C7B27988-F047-496A-2083-391E9D41A561}.wem"
+     },
+     {
+      "Id": "21376309",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gde-project-samples\\snowStep5.wav",
+      "CachePath": "E8/{E89CB538-21E0-1F0D-1F34-453E42AEB2F0}.wem"
+     },
+     {
+      "Id": "253796612",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gde-project-samples\\snowStep1.wav",
+      "CachePath": "A0/{A0B404D5-3EFB-C126-64D8-50560F1DE5E8}.wem"
+     },
+     {
+      "Id": "317656047",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gde-project-samples\\boltPickup1.wav",
+      "CachePath": "F8/{F8F2DFD6-5D3F-C82C-44BA-56FE08B2FEFB}.wem"
+     },
+     {
+      "Id": "389566166",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gde-project-samples\\boltPickup5.wav",
+      "CachePath": "94/{946D6934-523A-B0EB-02D7-E572B8FEAB8E}.wem"
+     },
+     {
+      "Id": "411118296",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gde-project-samples\\frogSMALL3.wav",
+      "CachePath": "EA/{EACF6950-41E8-4DC4-651A-BD99D671A596}.wem"
+     },
+     {
+      "Id": "505996265",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gde-project-samples\\frogSMALL2.wav",
+      "CachePath": "8C/{8C8949A6-B330-9FF1-D556-C5568DBAF07A}.wem"
+     },
+     {
+      "Id": "539863059",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gde-project-samples\\snowStep3.wav",
+      "CachePath": "6E/{6ED523B0-8D47-0436-D6F2-5A48324D03BB}.wem"
+     },
+     {
+      "Id": "636364734",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gde-project-samples\\snowstorm ambience.wav",
+      "CachePath": "1C/{1C35E329-C408-1D0E-719C-D159E7865B18}.wem"
+     },
+     {
+      "Id": "719162204",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gde-project-samples\\frogBIG.wav",
+      "CachePath": "9A/{9A6A7169-F388-2D88-84A9-83217B4FAE27}.wem"
+     },
+     {
+      "Id": "753291328",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gde-project-samples\\boltPickup4.wav",
+      "CachePath": "28/{28A8420C-2B32-4DB5-8FF2-5E50E7C34700}.wem"
+     },
+     {
+      "Id": "763429237",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gde-project-samples\\soundtrack.wav",
+      "CachePath": "1F/{1F824BFF-F8F5-FB90-D6EA-32DC685C52E9}.wem"
+     },
+     {
+      "Id": "842674018",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gde-project-samples\\frogSMALL1.wav",
+      "CachePath": "8E/{8EF492D0-46BC-59FC-0472-0106052C72AF}.wem"
+     },
+     {
+      "Id": "974085179",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gde-project-samples\\MischerAtmo.WAV",
+      "CachePath": "9A/{9A346D58-A6C4-D0DD-C734-A5E4450889A3}.wem"
+     },
+     {
+      "Id": "975968353",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gde-project-samples\\boltPickup2.wav",
+      "CachePath": "5D/{5DD9A22D-AC88-E0C3-D412-91A290453062}.wem"
+     },
+     {
+      "Id": "1021850817",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "gde-project-samples\\boltPickup3.wav",
+      "CachePath": "C7/{C79E2338-59FE-8ACF-808F-949EC29181F9}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3083130986",
+      "Name": "ATMO",
+      "ObjectPath": "\\Events\\Default Work Unit\\ATMO",
+      "GUID": "{D4B76636-29F0-4D30-BFAE-3454BBB8441D}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "636364734"
+       }
+      ]
+     },
+     {
+      "Id": "2984628487",
+      "Name": "BOLT_PICKUP",
+      "ObjectPath": "\\Events\\Default Work Unit\\BOLT_PICKUP",
+      "GUID": "{7D690DD6-63E8-4546-8E03-73661161FABB}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.45630622",
+      "DurationMax": "0.6318087",
+      "MediaRefs": [
+       {
+        "Id": "5141320"
+       },
+       {
+        "Id": "317656047"
+       },
+       {
+        "Id": "389566166"
+       },
+       {
+        "Id": "753291328"
+       },
+       {
+        "Id": "975968353"
+       },
+       {
+        "Id": "1021850817"
+       }
+      ]
+     },
+     {
+      "Id": "3329729329",
+      "Name": "BOMBOM_STEPS",
+      "ObjectPath": "\\Events\\Default Work Unit\\BOMBOM_STEPS",
+      "GUID": "{4B9BEB8C-0B35-4143-A307-8CB9F663A16D}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "21376309"
+       },
+       {
+        "Id": "253796612"
+       },
+       {
+        "Id": "539863059"
+       }
+      ]
+     },
+     {
+      "Id": "2685001988",
+      "Name": "FROG_BIG",
+      "ObjectPath": "\\Events\\Default Work Unit\\FROG_BIG",
+      "GUID": "{6CBF4236-A819-4904-8799-02528B22F47C}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "719162204"
+       }
+      ]
+     },
+     {
+      "Id": "1854978435",
+      "Name": "FROG_SMALL",
+      "ObjectPath": "\\Events\\Default Work Unit\\FROG_SMALL",
+      "GUID": "{65CA1FC7-961B-48E4-A824-661A79E2E890}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "411118296"
+       },
+       {
+        "Id": "505996265"
+       },
+       {
+        "Id": "842674018"
+       }
+      ]
+     },
+     {
+      "Id": "4158285989",
+      "Name": "GAMEOVER",
+      "ObjectPath": "\\Events\\Default Work Unit\\GAMEOVER",
+      "GUID": "{502B8374-4187-4246-99EC-FF719EA6F83A}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1957989366",
+      "Name": "SAWBLADE",
+      "ObjectPath": "\\Events\\Default Work Unit\\SAWBLADE",
+      "GUID": "{E94F138B-EE29-47C6-9D8D-15FE0B68B864}",
+      "MaxAttenuation": "30",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "974085179"
+       }
+      ]
+     },
+     {
+      "Id": "2082426231",
+      "Name": "SOUNDTRACK",
+      "ObjectPath": "\\Events\\Default Work Unit\\SOUNDTRACK",
+      "GUID": "{5BAFEC6A-C44F-4EC3-9337-8245C094031E}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "763429237"
+       }
+      ]
+     },
+     {
+      "Id": "2716678721",
+      "Name": "VICTORY",
+      "ObjectPath": "\\Events\\Default Work Unit\\VICTORY",
+      "GUID": "{85B82D26-2056-4750-AB9C-BA42A3257593}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1148647542",
+      "Name": "Player_Speed_Sound",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Player_Speed_Sound",
+      "GUID": "{A43C6CE3-168C-46ED-B420-0BED68540537}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{29F49A78-36AE-60E4-69A7-D408931A06B2}"
+ }
+}
