@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C4C987A2-A204-4812-8643-2D3D6DF98E39}",
     "Language": "SFX",
-    "Hash": "{93BF13B4-B850-9D7F-83BA-FDE531DDA7E4}",
+    "Hash": "{3628842D-83ED-FF7D-190A-B8BAD0185432}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main_Soundbank",
     "ShortName": "Main_Soundbank",
     "Path": "Main_Soundbank.bnk",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "gde-project-samples\\snowStep5.wav",
-      "CachePath": "E8/{E89CB538-21E0-1F0D-1F34-453E42AEB2F0}.wem"
+      "CachePath": "0F/{0F117FA5-6062-72F6-79E0-4E500E0B49FB}.wem"
      },
      {
       "Id": "253796612",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "gde-project-samples\\snowStep1.wav",
-      "CachePath": "A0/{A0B404D5-3EFB-C126-64D8-50560F1DE5E8}.wem"
+      "CachePath": "6F/{6F6C8892-F417-97ED-6C37-802D0080868C}.wem"
      },
      {
       "Id": "317656047",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "gde-project-samples\\snowStep3.wav",
-      "CachePath": "6E/{6ED523B0-8D47-0436-D6F2-5A48324D03BB}.wem"
+      "CachePath": "5D/{5D5FEF89-23B5-601B-E332-3AF9A1C49BFF}.wem"
      },
      {
       "Id": "636364734",
@@ -292,6 +292,6 @@
     ]
    }
   ],
-  "FileHash": "{F07485F3-6235-CC97-A5A0-C9BF98382759}"
+  "FileHash": "{A192262E-9F9A-805B-FDEA-1E1AF605D7F7}"
  }
 }
